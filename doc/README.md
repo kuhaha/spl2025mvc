@@ -23,7 +23,7 @@ INSERT INTO tbl_user
 
 ### 2. システム全体のレイアウト
 
-```shell
+```
 ├── spl2025mvc
 │   ├── conf # 設定ファイルのフォルダ
 │       ├──conf_app.inc.php
@@ -229,7 +229,7 @@ a {
 
 **ファイル名：**`src/Router.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025; 
 
@@ -276,7 +276,7 @@ class Router
 
 **ファイル名：**`src/controllers/Controller.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025\controllers; 
 
@@ -320,7 +320,7 @@ abstract class Controller
 
 **ファイル名：**`src/controllers/User.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025\controllers; 
 
@@ -420,7 +420,7 @@ class User extends Controller
 
 **ファイル名：**`src/models/Model.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025\models; 
 
@@ -522,7 +522,7 @@ abstract class Model
 
 **ファイル名：**`src/models/User.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025\models;     
     
@@ -544,7 +544,7 @@ class User extends Model
 
 **ファイル名：**`src/Views/View.php`
 
-```php+HTML
+```php
 <?php
 namespace spl2025\views; 
 
@@ -601,7 +601,7 @@ class View
 
 **ファイル名：**`src/Views/templates/pg_header.php`
 
-```php+HTML
+```php
 <!DOCTYPE html> 
 <html><head>
 <meta http-equiv="Content-TYPE" content="text/html; charset=UTF-8">
@@ -660,7 +660,7 @@ if (isset($_SESSION['urole'])){
 
 **ファイル名：**`src/Views/templates/usr_list.php`
 
-```php+HTML
+```php
 <h3 class="text-info">アカウント一覧</h3>
 <table class="table table-hover">
 <?php
@@ -679,7 +679,7 @@ foreach ($users as $user) {
 
 **ファイル名：** `index.php`
 
-```php+HTML
+```php
 <?php
 require "vendor/autoload.php";//namespaceに応じてファイルを自動ロード(include)する
 
