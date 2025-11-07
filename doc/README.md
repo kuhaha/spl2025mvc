@@ -465,7 +465,7 @@ abstract class Model
         if (!$rs) die ('DBエラー: ' . $sql . '<br>' . $this->db->error);
     } 
         
-   public  function getList($where=1, $orderby=null, $limit=0, $offset=0){
+   public function getList($where=1, $orderby=null, $limit=0, $offset=0){
         $sql = "SELECT * FROM {$this->table} WHERE {$where}";
         return $this->query($sql,$orderby, $limit, $offset);
     }
