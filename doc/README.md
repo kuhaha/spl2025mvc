@@ -23,7 +23,7 @@ INSERT INTO tbl_user
 
 ### 2. システム全体のレイアウト
 
-```sh
+```shell
 ├── spl2025mvc
 │   ├── conf # 設定ファイルのフォルダ
 │       ├──conf_app.inc.php
