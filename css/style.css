@@ -1,0 +1,32 @@
+.wrapper {
+    margin-right: auto; 
+    margin-left:  auto; 
+    max-width: 960px;  
+    padding-right: 10px; 
+    padding-left:  10px; 
+}
+.text-danger {
+    color: red;
+}
+a {
+    color:rgb(255, 243, 255);
+    text-decoration: none;
+}
+#navbar {
+    display: flex;
+    background-color: rgb(126, 121, 121);
+    color: white;
+    align-items: center;
+    min-height: 30pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    border-radius: 5px; 
+}
+
+#flex_left {
+    flex: auto;
+    text-align: left;
+}
+#flex_right{
+    text-align: right;
+}
