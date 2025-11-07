@@ -12,7 +12,7 @@
 flowchart LR
     id1(Client) -- Request --> id2(Program) -- Response --> id1 
 ```
-- **MVC**は、リクエストに対して、**データ処理**（`Model`）と**画面表示** （`View`）を分割し、さらに全体の流れを**制御する役割**（`Controller`）を担う部分を分けて、役割別にプログラムを組む仕組みである。
+- **MVC**は、リクエストに対して、**データ処理**（`Model`）と**画面表示** （`View`）を分割し、さらに全体の流れを**制御する役割**（`Controller`）を役割別に分けてプログラムを組む仕組みである。
 
 ```mermaid
 flowchart LR
