@@ -29,7 +29,9 @@ INSERT INTO tbl_user
 │       ├──conf_app.inc.php
 │       ├──develop_env.inc.php
 │       └──product_env.inc.php
-│   ├──css
+│   ├── doc
+│       ├──README.md # サンプルコード解説
+│   ├── css
 │       ├──style.css
 │   ├── src # ソースコードのフォルダ
 │       ├── controllers
