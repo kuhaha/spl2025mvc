@@ -360,7 +360,7 @@ class User extends Controller
         return $this->view()->redirect("/u/list");
     }
    
-    public function saveAction($on_success=null)
+    public function saveAction()
     {
         $data = $_POST;
         $act = $data['act'] ?? 'insert';
