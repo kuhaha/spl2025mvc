@@ -102,6 +102,7 @@ flowchart LR
 
    - ①実際のパスを隠してセキュリティ性が高まる。
    - ② URLが簡潔でわかりやすくなる。例：
+     
    `GET: /spl2025mvc/s/list`：`Student`コントローラーの`list`アクションで、学生を一覧する
    `GET: /spl2025mvc/s/update/3`：`Student`コントローラーの`update`アクションで、`id=3`の学生データを編集する
    `POST: /spl2025mvc/s/save` : `Student`コントローラーの`save`アクションで、送信された学生データを保存する
