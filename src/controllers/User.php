@@ -75,7 +75,7 @@ class User extends Controller
         }
     }
 
-    public function authAction($on_success=null)
+    public function authAction()
     {
         $uid = htmlspecialchars($_POST['uid']);
         $upass = htmlspecialchars($_POST['upass']);
