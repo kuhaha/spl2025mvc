@@ -113,7 +113,7 @@ return [
     ];
 ```
 
-**サーバに関する設定ファイル本番番環境）**
+**サーバに関する設定ファイル（本番番環境）**
 
 **ファイル名**：`conf/product_env.inc.php`
 
@@ -272,7 +272,7 @@ class Router
 
 
 
-### 7. コントローラー関連クラス
+### 7. コントローラー関連のクラス
 
 **ファイル名：**`src/controllers/Controller.php`
 
@@ -655,8 +655,6 @@ if (isset($_SESSION['urole'])){
 </div>
 </form>
 ```
-
-
 
 **ファイル名：**`src/Views/templates/usr_list.php`
 
