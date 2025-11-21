@@ -138,7 +138,8 @@ PHPの名前空間は、クラス名や関数名などの衝突を防ぎ、コ�
 名前空間の定義と使用法
 
 - **定義方法**: `namespace` キーワードの後に名前空間名を指定。
-  **ファイル名：**`namespace_sample.php`
+
+  **ファイル名：**`src/MyClass.php`
 
   ```php
   <?php
@@ -155,18 +156,18 @@ PHPの名前空間は、クラス名や関数名などの衝突を防ぎ、コ�
 
   ```php
   <?php
-  include 'namespace_sample.php';
-  // 名前空間を宣言していないファイルから呼び出す場合
+  include 'src/MyClass.php';
+  // 名前空間を宣言していないファイルから呼び出す
   $obj = new MyProject\MyClass();
   ```
 
 ### 4.2 Composerによる`autoload`
 
-`Composer`とは、**PHPのライブラリを管理するツール**。　`Composer`を使うことによって別のファイルを読み込む時に**オートロード(自動クラス読み込み)**してくれる。`Composer`は`composer.json`というファイルに書かれた`autoload`設定によって、名前空間とソースコードの保存先と関連付けることができ、必要なファイルを自動的にロード（`require`、`include`）してくれる。
+`Composer`とは、**PHPのライブラリを管理するツール**。　`Composer`を使うことによって別のファイルを読み込む時に **オートロード(自動クラス読み込み)** してくれる。`Composer`は`composer.json`というファイルに書かれた`autoload`設定によって、名前空間とソースコードの保存先と関連付けることができ、必要なファイルを自動的にロード（`require`、`include`）してくれる。
 
-**Composerツールは「Webプログラミング演習」の開発環境に導入済みで、ターミナルから実行できる **
+**Composerツールは「Webプログラミング演習」の開発環境に導入済みで、ターミナルから実行できる**
 
-**ファイル名：**`composer.json` 
+**ファイル名：** `composer.json` 
 
 ```json
 {
@@ -193,6 +194,7 @@ $ composer install
 
 ```php
 <?php
-// 名前空間を宣言していないファイルから呼び出す場合
+// include 'src/MyClass.php'; //MyProjectという名前空間がsrcフォルダと対応させているため,src/MyClassを読み込んでくれる
+// 名前空間を宣言していないファイルから呼び出す
 $obj = new MyProject\MyClass();
 ```
