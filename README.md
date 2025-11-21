@@ -190,11 +190,12 @@ $ composer install
 
 実行後は、`vendor`というフォルダが生成される。また、最新状態を記録する`composer.lock`というファイルも生成される。
 
-そうしたら、明示的に`include`を使わなくとも`namespace_sample.php`が自動的に読み込まれる
+そうしたら、明示的に`include`を使わなくとも`MyClass.php`が自動的に読み込まれる
 
 ```php
 <?php
-// include 'src/MyClass.php'; //MyProjectという名前空間がsrcフォルダと対応させているため,src/MyClassを読み込んでくれる
+//MyProjectという名前空間がsrcフォルダと対応させているため,src/MyClassを読み込んでくれる
+// include 'src/MyClass.php'; 
 // 名前空間を宣言していないファイルから呼び出す
 $obj = new MyProject\MyClass();
 ```
